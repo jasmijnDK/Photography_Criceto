@@ -18,24 +18,26 @@ main  {
 #slideshow {
   overflow: hidden;
   height: 510px;
-  width: 728px;
+  width: 400px;
   margin: 0 auto;
 }
 
 .slide-wrapper {
-  width: 2912px;
+  width: 2184px;
   -webkit-animation: slide 18s ease infinite;
 }
 
 .slide {
   float: left;
   height: 510px;
-  width: 728px;
+  width: 400px;
 }
 
 .slide:nth-child(1) {
   background-image: url(zwanger.JPG);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slide:nth-child(2) {
@@ -47,12 +49,16 @@ main  {
 
 .slide:nth-child(3) {
   background-image: url(DSC_0232.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slide:nth-child(4) {
   background-image: url(samen.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slide-number {
@@ -63,12 +69,12 @@ main  {
 
 @-webkit-keyframes slide {
   20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
+  30% {margin-left: -400px;}
+  50% {margin-left: -400px;}
+  60% {margin-left: -800px;}
+  70% {margin-left: -800px;}
+  80% {margin-left: -1200px;}
+  90% {margin-left: -1200px;}
 }
 
 main p {
@@ -149,12 +155,41 @@ nav a {
       top: 15rem;
       left: 14rem;
     }
+
+    #slideshow {
+      overflow: hidden;
+      height: 510px;
+      width: 728px;
+      margin: 0 auto;
+    }
+
+    .slide-wrapper {
+      width: 2912px;
+      -webkit-animation: slide 18s ease infinite;
+    }
+
+    .slide {
+      float: left;
+      height: 510px;
+      width: 728px;
+    }
+
+    @-webkit-keyframes slide {
+      20% {margin-left: 0px;}
+      30% {margin-left: -728px;}
+      50% {margin-left: -728px;}
+      60% {margin-left: -1456px;}
+      70% {margin-left: -1456px;}
+      80% {margin-left: -2184px;}
+      90% {margin-left: -2184px;}
+    }
 	}
 
   @media (min-width: 1100px) {
     body  {
       margin-left: auto;
       margin-right: auto;
+      background-color: white;
     }
 
     header img {
