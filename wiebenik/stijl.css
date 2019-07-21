@@ -1,0 +1,127 @@
+body h1 {
+  font-family: serif;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  color: #ae9a64
+}
+
+
+main  {
+  margin: 5rem auto 5rem auto;
+  border: 0.2rem solid #ae9a64;
+  height: 100vh;
+  width: 90%;
+  position: relative;
+}
+
+main p {
+  margin-bottom: 2rem;
+}
+
+.foto {
+  position: absolute;
+  top: 5rem;
+  left: 2.7rem;
+}
+
+header .menu {
+  position: fixed;
+  top: 2rem;
+  right: -10rem;
+}
+
+header img {
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+
+footer a{
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 1.5rem;
+}
+
+#nav-toggle {
+	position: fixed;
+	top: 3rem;
+	right: 5rem;
+}
+
+
+nav {
+	background-color: #ae9a64;
+	width: 50vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5rem;
+}
+
+nav.onzichtbaar {
+	display: none;
+}
+
+main {
+	min-height: 100vh;
+	padding: 3rem;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 2.25rem;
+	margin-bottom: 3rem;
+}
+
+@supports (grid-area: auto) {
+	@media (min-width: 700px) {
+		body  {
+      max-width: 1300px;
+    }
+    header img {
+      left: 4rem;
+    }
+    main {
+      position: relative;
+    }
+    main img {
+      position: absolute;
+      top: 17rem;
+      left: 17rem;
+    }
+
+	}
+
+  @media (min-width: 1100px) {
+    body  {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header img {
+      left: 7rem;
+    }
+
+    nav {
+      width: 25vw;
+    }
+
+    #nav-toggle {
+      right: 15.5rem;
+    }
+
+    main img {
+      left: 45rem;
+    }
+
+  }
+
+}

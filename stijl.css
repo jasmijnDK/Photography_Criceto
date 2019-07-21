@@ -1,0 +1,177 @@
+body h1 {
+  font-family: serif;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  color: #ae9a64;
+}
+
+
+main  {
+  margin: 5rem auto 5rem auto;
+  border: 0.2rem solid #ae9a64;
+  height: 100vh;
+  width: 90%;
+  position: relative;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background-image: url(zwanger.JPG);
+  background-size: cover;
+}
+
+.slide:nth-child(2) {
+  background-image: url(noortje.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide:nth-child(3) {
+  background-image: url(DSC_0232.jpg);
+  background-size: cover;
+}
+
+.slide:nth-child(4) {
+  background-image: url(samen.jpg);
+  background-size: cover;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+main p {
+  margin-bottom: 2rem;
+}
+
+header .menu {
+  position: fixed;
+  top: 2rem;
+  right: -10rem;
+}
+
+header img {
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+
+footer a{
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 1.5rem;
+}
+
+#nav-toggle {
+	position: fixed;
+	top: 3rem;
+	right: 5rem;
+}
+
+
+nav {
+	background-color: #ae9a64;
+	width: 50vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5rem;
+}
+
+nav.onzichtbaar {
+	display: none;
+}
+
+main {
+	min-height: 100vh;
+	padding: 3rem;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 2.25rem;
+	margin-bottom: 3rem;
+}
+
+@supports (grid-area: auto) {
+	@media (min-width: 700px) {
+		body  {
+      max-width: 1300px;
+    }
+
+    header img {
+      left: 4rem;
+    }
+
+    main {
+      position: relative;
+    }
+    main img {
+      position: absolute;
+      top: 15rem;
+      left: 14rem;
+    }
+	}
+
+  @media (min-width: 1100px) {
+    body  {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header img {
+      left: 7rem;
+    }
+
+    nav {
+      width: 25vw;
+    }
+
+    #nav-toggle {
+      right: 15.5rem;
+    }
+
+    main img {
+      left: 40rem;
+    }
+
+  }
+}

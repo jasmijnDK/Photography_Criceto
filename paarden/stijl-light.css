@@ -1,0 +1,42 @@
+main a {
+  grid-row: 1;
+  text-decoration: none;
+  font-family: serif;
+  color: black;
+  font-size: 1.5rem;
+}
+
+footer {
+  font-family: serif;
+  color: black;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer a {
+  color: black;
+}
+
+#nav-toggle span { position: absolute; left: 50%; top: 50%; }
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ae9a64;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}

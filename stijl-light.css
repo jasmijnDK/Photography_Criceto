@@ -1,0 +1,51 @@
+main h2 {
+  color: black;
+  font-size: 3rem;
+  font-family: serif;
+  padding-bottom: 2rem;
+}
+
+main p {
+  color: black;
+  font-size: 1.5rem;
+  font-family: serif;
+}
+
+.foto {
+  margin: 5rem auto 5rem auto;
+}
+
+footer {
+  font-family: serif;
+  color: black;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer a {
+  color: black;
+}
+
+#nav-toggle span { position: absolute; left: 50%; top: 50%; }
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ae9a64;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
